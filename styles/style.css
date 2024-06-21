@@ -116,18 +116,5 @@ font-weight: bold;
 
 
 
-/* **********diplomes keyframes********** */
-
-.hand{
-  max-width: 400px;
-  margin-top: -25px;
-  animation: hand 2s ease-in-out infinite alternate forwards;
-}
-
-@keyframes hand{
-  0%{transform: translateY(10%) scale(.8)}
-  50%{transform: translateY(5%) scale(.9)}
-  100%{transform: translateY(10%) scale(.8)}
-}
 
 
