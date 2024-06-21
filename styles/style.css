@@ -1,0 +1,133 @@
+.color-nav{
+  color:#000
+}
+.navbar-nav .nav-item a {
+  color: #fff; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprimer le soulignement */
+}
+.navbar-nav .nav-item a:hover {
+  color: rgb(215, 187, 116); /* Couleur du texte des liens au survol */
+  text-decoration: none; /* Assurer que le soulignement est également supprimé au survol */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.bouton{
+  background-color: rgb(39, 38, 36);
+  color: rgb(215, 187, 116);
+}
+
+.bouton:hover{
+  background-color:rgb(215, 187, 116);
+  color: #000;
+}
+
+
+/* *****presentation******** */
+.titre{
+  background-color:#000;
+  color: #fff;
+}
+/* .ombre-1{
+  box-shadow: 5px 0 10px rgba(0,0,0,0.3)
+} */
+
+/* *****technologies************** */
+
+.progress-hover:hover{
+  font-weight: bold;
+  /* color: #fff;
+  background-color: rgb(189, 216, 221); */
+}
+
+.langage-text a{
+  text-decoration: none;
+  color: #000;
+}
+.langage-text a:hover{
+font-weight: bold;
+}
+
+.back-tech{
+  background-image: url("/styles/images/bulle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ombre {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); /* Exemple de valeurs */
+}
+
+
+/* *******page expériences ****** */
+
+.fond{
+  background-image: url("/styles/images/07.jpg");
+}
+
+.back-exp{
+  background-image: url("/styles/images/bulle.jpg");
+}
+
+.back{
+  background-color: rgba(158, 165, 167, 0.3);
+}
+
+.titre-card, .text-card{
+  color: black;
+}
+
+.fondu{
+  animation: fondu 2s linear  ;
+}
+
+@keyframes fondu{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
+@media (max-width:1000px){
+  .bouton a{
+    background-color: rgb(72, 145, 162);
+    color: #fff;
+  }
+}
+
+/* *******responsive menu burger********* */
+@media (max-width:1000px) {
+
+  li a{
+    float: right;
+    color: #b93737
+  }
+
+  #logo{
+    width: 10em
+  }
+  
+} 
+
+
+
+/* **********diplomes keyframes********** */
+
+.hand{
+  max-width: 400px;
+  margin-top: -25px;
+  animation: hand 2s ease-in-out infinite alternate forwards;
+}
+
+@keyframes hand{
+  0%{transform: translateY(10%) scale(.8)}
+  50%{transform: translateY(5%) scale(.9)}
+  100%{transform: translateY(10%) scale(.8)}
+}
+
+
