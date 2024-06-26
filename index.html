@@ -12,17 +12,20 @@
 
 <header>
     <nav class="navbar navbar-expand-lg container-fluid" style="background-color: #000">
-        <span class="navbar-brand">
-          <a href="#">
+        <a class="navbar-brand" href="#">
             <img src="/styles/images/logo.png" alt="logo" id="logo" class="mx-5" width="90px">
-          </a>
-        </span>
-        <ul class="navbar-nav ms-auto text-light">
-          <li class="nav-item mx-4"><a href="#presentation" class="nav-link text-light"><i class="bi bi-person"></i> Qui suis-je ?</a></li>
-          <li class="nav-item mx-4"><a href="#expertise" class="nav-link text-light"><i class="bi bi-person-workspace"></i> Digital Technology</a></li>
-          <li class="nav-item mx-4"><a href="#portfolio" class="nav-link text-light"><i class="bi bi-journal-bookmark"></i> Portfolio</a></li>
-          <li class="nav-item mx-4"><a href="#diplomes" class="nav-link text-light"><i class="bi bi-award"></i> Diplômes</a></li>
-        </ul>
+        </a>
+        <button class="navbar-toggler" type="button" style="background-color: rgb(128, 109, 205); margin-right: 10px" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto text-light">
+                <li class="nav-item mx-4"><a href="#presentation" class="nav-link text-light"><i class="bi bi-person"></i> Qui suis-je ?</a></li>
+                <li class="nav-item mx-4"><a href="#expertise" class="nav-link text-light"><i class="bi bi-person-workspace"></i> Digital Technology</a></li>
+                <li class="nav-item mx-4"><a href="#portfolio" class="nav-link text-light"><i class="bi bi-journal-bookmark"></i> Portfolio</a></li>
+                <li class="nav-item mx-4"><a href="#diplomes" class="nav-link text-light"><i class="bi bi-award"></i> Diplômes</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -30,47 +33,38 @@
     <!-- Présentation -->
     <div class="presentation my-5">
         <h1 id="presentation" class="bg-light py-2 text-center">Qui suis-je ?</h1>
-        <div class="row row-cols-1 row-cols-lg-2 fond-photo align-items-center">
-            <div class="col">
-                <h1 class="text-center" style="color: rgb(215, 187, 116)">Frédéric Roblot-Coulanges</h1>
+        <div class="row row-cols-1 row-cols-lg-2 fond-photo align-items-stretch d-flex">
+            <div class="col d-flex flex-column">
+                <h2 class="text-center" style="color: rgb(215, 187, 116)">Frédéric Roblot-Coulanges</h2>
                 <div class="mt-5">
                     <h3 class="titre text-center">Mon parcours</h3>
                     <p style="text-align: justify;">
-                        Personal Trainer pendant plus de 13 ans, en 2020 lors de la création d'un site web dédié au coaching sportif, le hasard m'a conduit vers le monde du développement web. Contre toute attente, séduit et piqué par cet univers, en 2023, je décide de transformer cette passion latente en carrière. 
+                        Personal Trainer pendant plus de 13 ans, en 2020 lors de la création d'un site web dédié au coaching sportif, le hasard m'a conduit vers le monde du développement web. Contre toute attente, séduit et piqué par cet univers, en 2023, je décide de transformer cette passion latente en carrière.
                     </p>
                 </div>
                 <div class="mb-5">
                     <h3 class="titre text-center">Centre d'intérêts</h3>
-                    <ul class="list-unstyled">
-                        <li>Jiu-jitsu brésilien</li>
-                        <li>Voyages</li>
-                        <li>Gastronomie</li>
-                        <li>Informatiques</li>
-                    </ul>
+                    <p class="text-center">
+                        Jiu-jitsu brésilien - Voyages - Gastronomie - Informatique
+                    </p>
                 </div>
                 <div class="mb-5">
                     <h3 class="titre text-center">Mes qualités</h3>
-                    <ul class="list-unstyled">
-                        <li>Passionné</li>
-                        <li>Curieux</li>
-                        <li>Réactif</li>
-                        <li>Créatif</li>
-                        <li>Autonome</li>
-                        <li>Sociable</li>
-                    </ul>
+                    <p class="text-center">
+                        Passionné - Curieux - Réactif - Autonome - Sociable
+                    </p>
                 </div>
                 <div class="mb-5">
                     <h3 class="titre text-center">Langues</h3>
-                    <ul class="list-unstyled">
-                        <li>Anglais (courant)</li>
-                        <li>Allemand (notions scolaires)</li>
-                    </ul>
+                    <p class="text-center">
+                        Anglais (courant) / Allemand (notions scolaires)
+                    </p>
                 </div>
-                <div class="mt-5">
-                    <a href="#expertise" class="bouton rounded text-decoration-none px-3 py-2">Expertise</a>
+                <div class="my-5 justify-content-center d-flex">
+                    <a href="#expertise" class="bouton rounded text-decoration-none px-5 py-3 fs-5">Expertise</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex flex-column">
                 <div class="photo-profil mx-auto pb-3">
                     <img src="/styles/images/tinified/profil.jpg" title="passionné par l'IT" alt="photo profil" id="profil" class="img-thumbnail img-fluid w-100 h-100">
                 </div>
@@ -174,8 +168,8 @@
             </div>
         </div>
     </div>
-    <div class="d-flex">
-        <a href="#portfolio" class="bouton rounded py-2 px-3 text-decoration-none">Portfolio</a>
+    <div class="d-flex justify-content-center">
+        <a href="#portfolio" class="bouton rounded px-5 py-3 fs-5 text-decoration-none">Portfolio</a>
     </div>
     <!-- Fin Technology -->
 
@@ -183,49 +177,42 @@
     <section>
         <div class="container mt-5 py-3 text-center">
             <h3 id="portfolio" class="bg-light py-2 ombre-1">Portfolio</h3>
-            <div class="row">
-<div class="col col-sm-12 p-2 col-md-4">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col mb-2">
                     <div class="card w-100 h-100" style="width: 18rem;">
                         <img src="styles/images/logo_credit-finance.png" class="card-img-top" alt="application mobile">
                         <div class="card-body bg-light">
-                            <h5 class="card-title mb-4">Site placements immobiliers</h5>
+                            <h5 class="card-title mb-4">Site placements financiers</h5>
                             <div class="d-flex justify-content-center">
-                                <a href="https://dwwmpaolo.fun/" class="bouton rounded text-decoration-none px-5 py-2">Visiter</a>
+                                <a href="https://dwwmpaolo.fun/" class="bouton rounded text-decoration-none px-5 py-3 fs-5">Visiter</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                  <div class="col col-sm-12 p-2 col-md-4">
+                <div class="col mb-2">
                     <div class="card w-100 h-100" style="width: 18rem;">
                         <img src="styles/images/kinemax.png" class="card-img-top" alt="kinesitherapie">
                         <div class="card-body bg-light">
                             <h5 class="card-title mb-4">Site kinesitherapie</h5>
                             <div class="d-flex justify-content-center">
-                                <a href="https://fred-webdev-kine.netlify.app/" class="bouton rounded text-decoration-none px-5 py-2" target="_blank">Visiter</a>
+                                <a href="https://fred-webdev-kine.netlify.app/" class="bouton rounded text-decoration-none px-5 py-3 fs-5" target="_blank">Visiter</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col col-sm-12 p-2 col-md-4">
+                <div class="col mb-2">
                     <div class="card w-100 h-100" style="width: 18rem;">
                         <img src="styles/images/logo chez fred.png" class="card-img-top" alt="restaurant">
                         <div class="card-body bg-light">
                             <h5 class="card-title mb-4">Site restaurant</h5>
                             <div class="d-flex justify-content-center">
-                                <a href="https://fred-webdev-resto.netlify.app/" class="bouton rounded text-decoration-none px-5 py-2" target="_blank">Visiter</a>
+                                <a href="https://fred-webdev-resto.netlify.app/" class="bouton rounded text-decoration-none px-5 py-3 fs-5" target="_blank">Visiter</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-              
-
-
-                
-
             </div>
         </div>
     </section>
@@ -249,7 +236,7 @@
                         => Attestation de formation aux premiers secours</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a href="https://github.com/fredlecoach" target="_blank" class="bouton px-4 py-2 mt-5 text-decoration-none rounded">GitHub</a>
+                        <a href="https://github.com/fredlecoach" target="_blank" class="bouton px-5 py-3 fs-5 mt-5 text-decoration-none rounded">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -258,7 +245,7 @@
     <!-- Fin Diplômes -->
 </div>
 
-<footer class="p-2 text-light mt-5" style="background-color: #000; width: 100%;">FredRc - copyright&copy; Tous droits réservés</footer>
+<footer class="p-2 text-light mt-5 text-center" style="background-color: #000; width: 100%;">FredRc copyright&copy; Tous droits réservés</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
